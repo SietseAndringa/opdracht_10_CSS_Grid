@@ -1,0 +1,212 @@
+
+.grid-site {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 75px 1fr 3fr 40px;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px; 
+    background-color: lightslategray;
+    height: 98vh;
+    }
+    
+.header-grid {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: chartreuse;
+    text-align: center;    
+}
+
+.navbar-grid {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: turquoise;
+}
+
+.navbox-1 {
+        border: 5px solid yellow;
+        width: 100px;
+        margin: 10px 10px;
+        padding-top: 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+}        
+
+.main-grid-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: crimson;
+
+}
+
+.main-grid-2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: blueviolet;
+
+}
+
+.margin-small {
+    margin: 5% 5% 5% 5%;
+}
+
+.footer-grid {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    background-color: darkorange;
+    text-align: center;
+}
+
+.margin-footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+    .grid-site {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 75px 1fr 3fr 40px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; 
+        background-color: lightslategray;
+        height: 98vh;
+        }
+        
+    .header-grid {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: chartreuse;
+        text-align: center;    
+    }
+    
+    .navbar-grid {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        background-color: turquoise;
+    }
+     
+    .main-grid-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: crimson;
+    
+    }
+    
+    .main-grid-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: blueviolet;
+    
+    }
+
+    .footer-grid {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: darkorange;
+        text-align: center;
+    }
+    .navbox-1 {
+        border: 5px solid yellow;
+        width: 200px;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+}        
+}
+
+@media (min-width: 1500px) {
+    .grid-site {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 75px 1fr 3fr 40px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px; 
+        background-color: lightslategray;
+        height: 98vh;
+        }
+        
+    .header-grid {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: chartreuse;
+        text-align: center;    
+    }
+    
+    .navbar-grid {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        background-color: turquoise;
+    }
+    
+    .main-grid-1 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: crimson;
+    
+    }
+    
+    .main-grid-2 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: blueviolet;
+    
+    }
+    
+    .footer-grid {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: darkorange;
+        text-align: center;
+    }
+    .navbox-1 {
+        border: 5px solid yellow;
+        width: 200px;
+        margin: 10px 10px;
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
